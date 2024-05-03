@@ -1,3 +1,9 @@
-<html>
-<body><h1> I love tacos!</body>
-</html>
+<% fillings = ["carnitas", "al pastor", "steak", "pescado"] %> 
+<h1> there are <%= fillings.length %> tacos </h1>
+
+<ol>
+<% for filling in fillings %>
+  <li> <%= filling %> </li>
+<% end %>
+</ol>
+
